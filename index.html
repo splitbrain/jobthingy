@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" ng-app="jobsApp">
+<head>
+    <meta charset="utf-8">
+    <title>My HTML File</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+    <script src="js/Job.js"></script>
+    <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="jobCtrl">
+
+
+<div class="info">
+    Full-Time: {{fulltime}}<br />
+    Run-Time: {{runtime}}<br />
+    Real-Time: {{realtime}}<br />
+</div>
+
+<div class="jobs">
+    <div data-ng-repeat="job in jobs" class="job {{job.status}}">
+        <span style="color: {{job.getColor()}}">{{job.toString()}}</span>
+        <ul>
+            <li>Fulltime: {{job.fulltime}}</li>
+            <li>Runtime: {{job.runtime}}</li>
+            <li>Status: {{job.status}}</li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>

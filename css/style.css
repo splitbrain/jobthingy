@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+}
+
+div.info {
+    text-align: right;
+}
+
+div.jobs {
+    font-size: 0.6em;
+}
+
+div.job {
+    float: left;
+    width: 10em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    margin: 1em;
+    padding: 1em;
+}
+
+div.job span {
+    font-size: 2em;
+}
+
+div.job ul {
+    margin: 0;
+    padding: 0.5em;
+}
+
+div.job.new {
+    opacity: 0.5;
+}
+
+div.job.running {
+    background-color: #fffbae;
+}
+
